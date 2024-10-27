@@ -1,0 +1,30 @@
+namespace tagrobas
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            car myCar = new car();
+            myCar.maker = "BMW";
+            myCar.model = "sedan";
+            myCar.year = 2022;
+            myCar.color = "Red";
+
+            Console.WriteLine("{0} {1} {2} {3}",myCar.maker,myCar.model,myCar.year,myCar.color);
+            Console.ReadLine();
+            Console.ReadKey();
+        }
+    }
+    class car
+    {
+        public string maker { get; set; }
+
+        public string model { get; set; }
+
+        public int year { get; set; }
+
+        public string color { get; set; }
+
+       
+    }
+}
